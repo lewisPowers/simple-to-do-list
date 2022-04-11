@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="client.js"></script>
+    <title>Practical Todos</title>
+    <style></style>
+    <link id="favicon" rel="icon" href="https://cdn.gomix.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Ffavicon.ico" type="image/x-icon">
+    <link id="css" type="text/css" rel="stylesheet" href="style.css">
+  </head>
+  <body style="background-color:powderblue;">
+    <div id="main-div">
+      <div id="head" align="center">
+        <h1>My To-Do's</h1>
+      </div>
+      <div class="input-field">
+        <h3>
+          I Need To: <input id="addTodoTextInput" type="text" placeholder="Write something here">
+          <button id="add-button" onclick="handlers.addTodo()"><strong>ADD</strong></button>
+        </h3>
+      </div>
+      <div class="complete-div">
+        <div>
+          <button onclick="handlers.toggleAll()" style="background-color:powderblue;color:black;"><span style="text-decoration:line-through;font-family:cursive;font-weight:bold;font-size:12px;">Complete</span> All</button>
+        </div>
+      </div>
+      <div id="urgent_ul">
+        <ul class="urgent-ul" id="urgent">
+        </ul>
+      </div>
+      <div id="middle">
+        <ul class="list" id="ul1" style="color:blue">
+        </ul>
+      </div>
+
+      <div id="completed_list">
+
+        <ul id="completed" class="completed" style="text-decoration:line-through;">
+        </ul>
+
+        <div>
+          <button onclick="handlers.clearList()" style="background-color:powderblue;color:red">Clear List</button>
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+    <script src="client.js"></script>
+  </body>
+</html>
